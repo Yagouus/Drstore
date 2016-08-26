@@ -22,3 +22,8 @@
     position: absolute;
     margin-top: 30vh;
 }
+
+#map{
+    height: 400px;
+    margin:0;
+}

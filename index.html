@@ -112,8 +112,8 @@
         </div>
 
         <div class="row">
-            <div class="col s12">
-                <div class="card horizontal">
+            <div class="col s4">
+                <div class="card">
                     <div class="card-image">
                         <img src="http://www.stockvault.net/blog/wp-content/uploads/2013/11/Portrait-8.jpg">
                         <span class="card-title">Antonio Méndez Besada</span>
@@ -125,8 +125,8 @@
                 </div>
             </div>
 
-            <div class="col s12">
-                <div class="card horizontal">
+            <div class="col s4">
+                <div class="card">
                     <div class="card-image">
                         <img src="http://www.stockvault.net/blog/wp-content/uploads/2013/11/Portrait-8.jpg">
                         <span class="card-title">Antonio Méndez Besada</span>
@@ -138,8 +138,8 @@
                 </div>
             </div>
 
-            <div class="col s12">
-                <div class="card horizontal">
+            <div class="col s4">
+                <div class="card">
                     <div class="card-image">
                         <img src="http://www.stockvault.net/blog/wp-content/uploads/2013/11/Portrait-8.jpg">
                         <span class="card-title">Antonio Méndez Besada</span>
@@ -169,7 +169,28 @@
         </div>
 
     </div>
+    
+    <!--Map-->
+    <div id="map"></div>
 
+    <script>
+        function initMap() {
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+                center: {lat: 42.397104, lng: -8.827970},
+                zoom: 18
+            });
+
+            var marker = new google.maps.Marker({
+                position: {lat: 42.397104, lng: -8.827970},
+                map: map,
+                title: 'Farmacia'
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWHPbikPwFXLpfKULiSBvoW2F9DsNpwmE&callback=initMap">
+    </script>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
